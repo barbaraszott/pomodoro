@@ -2,6 +2,8 @@
 
 Simple Pomodoro app written in vanilla JavaScript.
 
+Live version: https://barbaraszott.github.io/pomodoro/
+
 ## Table of contents 
 
 - [Introduction](#introduction)
