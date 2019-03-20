@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e3324f;
+  // background-color: blue;
+  font-size: 18px;
+  font-family: 'Sniglet', cursive;
+}

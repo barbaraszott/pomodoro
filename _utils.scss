@@ -1,0 +1,20 @@
+%button {
+  min-width: 48px;
+  min-height: 48px;
+  background: none;
+  border: none;
+  color: #650110;
+  cursor: pointer;
+}
+
+%pomodoro-half {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e3324f;
+  width: 300px;
+  height: 140px;
+  border-bottom: 5px solid #c23046;
+  border-top: 5px solid #e95b72;
+}

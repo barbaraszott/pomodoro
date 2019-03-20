@@ -1,0 +1,21 @@
+@import 'utils';
+@import 'animations';
+
+@import 'base';
+@import 'pomodoro-decor';
+@import 'timer';
+@import 'play';
+@import 'adjust-time';
+
+
+// #########################################################################
+// WHAT'S INSIDE?
+// #########################################################################
+//
+// UTILS - mixins, placeholders, variables...
+// ANIMATIONS - keyframes for animations
+// BASE - some base styles - body styling
+// POMODORO-DECOR - glowing effect behind pomodoro, green decor; .pomodoro div
+// TIMER - upper piece of pomodoro, with -of course - stimer; also - reset button
+// PLAY - lower piece of pomodoro, with play/pause button
+// ADJUST-TIME - box under the pomodoro, where we can adjust time

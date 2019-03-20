@@ -1,0 +1,42 @@
+// #########################################################################
+// 1. ROTATING RESET BUTTON
+// 2. ROTATING LINES WHEN POMODORO IS WORKING
+// #########################################################################
+
+@keyframes rotate-reset { /* 1 */
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.pomodoro__reset__icon {
+	animation: rotate-reset 3s ease-in-out infinite forwards;
+	animation-play-state: paused;
+
+	&:hover {
+		animation-play-state: running;
+	}
+}
+
+@keyframes animatedBackground { /* 2 */
+	0% {background-position: 0 0;}
+	100% {background-position: -300px 0;}
+}
+
+.pomodoro__play {
+	&::before {
+		content: '';
+		background-image: url('https://imgbbb.com/images/2019/03/13/lines-pomodoro.png');
+		background-repeat: repeat-x;
+		position: absolute;
+		top: -2px;
+		width: 100%;
+		height: 20px;
+		background-position: 0px 0px;
+		animation: animatedBackground 50s linear infinite;
+		animation-play-state: paused;
+	}
+
+	&.running::before { /* for JS purposes */
+		animation-play-state: running;
+	}
+}

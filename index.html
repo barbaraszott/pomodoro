@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="main.min.css">
+  <meta charset="utf-8">
+  <title>Pomodoro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+</head>
+
+<body>
+  <div class="pomodoro">
+    <div class="pomodoro__timer">
+      <button id="reset" class="pomodoro__reset">
+        <i class="pomodoro__reset__icon fas fa-redo-alt fa-2x"></i>
+      </button>
+      <span class="timer-label" id="timer-label" data-phase="session">SESSION</span>
+      <span class="time-left" id="time-left">25:00</span>
+      <audio src="https://goo.gl/65cBl1" id="beep" preload="auto"></audio>
+    </div>
+    <div class="pomodoro__play">
+      <button id="start_stop" class="play-button" data-action="start">
+        <i class="fas fa-play fa-2x" id="startButton" style="display:block;"></i>
+        <i class="fas fa-pause fa-2x" id="stopButton" style="display:none;"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="adjust" id="adjust-time">
+
+    <div class="adjust__break">
+      <div class="adjust__phase-label" id="break-label">Break:</div>
+      <div class="length" id="break-length">5</div>
+      <button class="change-time" id="break-decrement" data-action="decrement">
+        <i class="fas fa-arrow-alt-circle-down fa-2x"></i>
+      </button>
+      <button class="change-time" id="break-increment" data-action="increment">
+        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+      </button>
+    </div>
+
+    <div class="adjust__session">
+      <div class="adjust__phase-label" id="session-label">Session:</div>
+      <div class="length" id="session-length">25</div>
+      <button class="change-time" id="session-decrement" data-action="decrement">
+        <i class="fas fa-arrow-alt-circle-down fa-2x"></i>
+      </button>
+      <button class="change-time" id="session-increment" data-action="increment">
+        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

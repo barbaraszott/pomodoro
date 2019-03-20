@@ -1,0 +1,62 @@
+// #########################################################################
+// 1. GLOWING EFFECT BEHIND THE POMODORO
+// 2. GREEN DECOR
+// 2A. ON THE BORDER (lighter green)
+// 2B. GREEN ARROW
+// 3. WHITE ARROW IN TIMER BOX
+// #########################################################################
+
+.pomodoro {
+  position: relative;
+  background-color: #f7d7dd;
+  box-shadow: 0px 0px 300px 100px #faf2f4; /* 1 */
+  border-radius: 20px;
+
+  &::before, &::after { /* 2 */
+    content: '';
+    position: absolute;
+    height: 0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::before { /* 2A */
+    border-top: 5px solid #59b084;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    width: 55px;
+    z-index: 1;
+  }
+
+  &::after { /* 2B */
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 25px solid #2f9c65;
+    width: 0;
+  }
+}
+
+.pomodoro__timer { /* 3 */
+  &::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: #fff;
+    transform: rotate(45deg);
+    border-radius: 0 8px;
+    bottom: 8px;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    width: 35px;
+    height: 20px;
+    position: absolute;
+    background-color: #e3324f;
+    bottom: 26px;
+    z-index: -1;
+  }
+}
