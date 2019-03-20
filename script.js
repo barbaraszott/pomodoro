@@ -30,15 +30,15 @@ const beep = document.querySelector('#beep');
 // Update time
 const updateTime = () => timeLeft.innerText = setTime.time;
 
-
-
-
-
-// #########################################################################
-//   LEFT PAD FUNCTION FOR DISPLAYING TIME WITH LEADING ZEROES
-// #########################################################################
-
+// Left-pad function for displaying time with leading zeros
 const leftPad = num => ('0' + num).slice(-2);
+
+
+
+
+// #########################################################################
+// SET TIME - GETTERS AND SETTERS
+// #########################################################################
 
 const setTime = {
   _minutes : 25,
