@@ -26,6 +26,6 @@ Learn more abour pomodoro technique on [Wikipedia](https://en.wikipedia.org/wiki
 
 ## Technologies
 
-- Vanilla JavaScript
+- Vanilla JavaScript (ES6)
 - SCSS as a CSS preprocessor
 - BEM methodology
