@@ -77,7 +77,7 @@ changeTimeButtons.forEach(button => button.addEventListener('click', changeTime)
 
 function changeTime(event) {
   const button = event.target.closest('button');
-  const lengthOfTime = button.parentNode.querySelector('.length');
+  const lengthOfTime = button.parentNode.querySelector('.js-length');
   const action = button.dataset.action;
   let time = Number(lengthOfTime.innerText);
 
